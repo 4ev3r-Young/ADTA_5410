@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "adta-5410"
+version = "0.1.0"
+description = "Deep learning project for predicting stock prices."
+authors = ["Young Yu <4ev3er.young@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+package-mode = false 
+
+[tool.poetry.dependencies]
+python = "3.11.9"
+yfinance = "^0.2.44"
+transformers = "^4.45.2"
+scikit-learn = "^1.5.2"
+python-dotenv = "^1.0.1"
+pandas = "^2.2.3"
+ipywidgets = "^8.1.5"
+requests = "^2.32.3"
+tf-keras = "^2.17.0"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
