@@ -3,4 +3,4 @@ data
 .env
 adta*
 utilities/scratch.py
-
+.DS_STORE
