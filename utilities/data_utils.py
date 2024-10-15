@@ -1,5 +1,6 @@
 import pandas as pd
 
+#-------------------------------------------------------------------------------------------------------------------------------------------------------------
 def format_date(df):
     """
     Rename and standardize date column, convert them to datetime,
@@ -44,15 +45,15 @@ def format_date(df):
     
     return df
 
-
+#-------------------------------------------------------------------------------------------------------------------------------------------------------------
 def aggregate_column(df, agg_columns):
     """
-   Aggregate dataframe by the date column.
-    
+    Aggregate dataframe by the date column.
+
     Parameters:
     - df: The DataFrame to aggregate.
     - agg_columns: A dictionary where the keys are column names and the values are aggregation functions.
-    
+
     Returns:
     - Aggregated DataFrame or None if an error occurs.
     """
@@ -60,34 +61,31 @@ def aggregate_column(df, agg_columns):
         # Ensure 'date' column exists
         if 'date' not in df.columns:
             raise KeyError("The DataFrame does not contain a 'date' column.")
-        
+
         # Ensure 'date' column is in datetime format and strip the time part
         df['date'] = pd.to_datetime(df['date'], errors='coerce').dt.date
-        
+
         if df['date'].isnull().all():
             raise ValueError("The 'date' column could not be converted to datetime.")
-        
-        # Check if columns exist 
+
+        # Check if columns exist
         missing_cols = [col for col in agg_columns.keys() if col not in df.columns]
         if missing_cols:
             raise KeyError(f"The following columns are missing from the DataFrame: {missing_cols}")
-        
-        # aggregate columns based on the dictionary
-        aggregation = {col: aggfunc for col, aggfunc in agg_columns.items()}
-        
-        # apply the aggregation
-        aggregated_df = df.groupby('date').agg(aggregation).reset_index()
-    
+
+        # Aggregate columns based on the dictionary
+        aggregated_df = df.groupby('date').agg(agg_columns).reset_index()
+
     except KeyError as e:
         print(f"KeyError: {e}")
         return None
-    
+
     except ValueError as e:
         print(f"ValueError: {e}")
         return None
-    
+
     except Exception as e:
         print(f"An unexpected error occurred: {e}")
         return None
-    
+
     return aggregated_df

@@ -1,3 +1,6 @@
 .venv
 data
 .env
+adta*
+utilities/scratch.py
+

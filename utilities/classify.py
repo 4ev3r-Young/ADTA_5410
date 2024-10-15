@@ -1,7 +1,6 @@
 
 
-
-
+#-------------------------------------------------------------------------------------------------------------------------------------------------------------
 def is_financial_article(article, classifier):
     categories = ["Finance", "Non-Finance"]
     content = article['content'] or article['title']
@@ -9,6 +8,7 @@ def is_financial_article(article, classifier):
     return result['labels'][0] == 'Finance'
 
 
+#-------------------------------------------------------------------------------------------------------------------------------------------------------------
 def article_sentiment(article, sentiment_classifier):
     content = article.get('content') or article.get('title')
     
