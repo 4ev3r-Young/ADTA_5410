@@ -4,3 +4,6 @@ data
 adta*
 utilities/scratch.py
 .DS_STORE
+
+# Ignore __pycache__ folders
+__pycache__/
