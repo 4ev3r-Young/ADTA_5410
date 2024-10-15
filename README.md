@@ -17,13 +17,13 @@ Target Variables:
 Deliverables:
 - A forecast of stock price directional movement (gain or loss) for selected companies.
 - Analysis of sentiment impact from news and social media trends on stock prices.
-- Stretch goal – predicting % price change <br><br>
+- Stretch goal – predicting % price change <br>
 Methodology:
-Sentiment Analysis, Logistic Regression, and other required methods as needed.
+Sentiment Analysis, Logistic Regression, and other required methods as needed. TBD <br>
 
 
-Build a dataset to train a predictive model using pre-built models. Train a custom model to predict stock price direction and % change.
+Pre-built models are used to filter financial news and then analyze the article to get a weighted sentiment score. News, historical stock prices and other engineered features will be used to train a custom RNN model to predict stock price direction and % price change. <br>
 
 The information for getting started and fine tuning pre-trained models can be found on [Hugging Face](https://huggingface.co/docs/transformers/en/training)<br>
 
-Special Thanks to [Ed and the Team @newscatcherapi](https://www.newscatcherapi.com/) for the student support.
+Special Thanks to [Ed and the Team @newscatcherapi](https://www.newscatcherapi.com/) for the student support. You can also find their GitHub [Here.](https://github.com/NewscatcherAPI)
