@@ -17,7 +17,7 @@ Target Variables:
 Deliverables:
 - A forecast of stock price directional movement (gain or loss) for selected companies.
 - Analysis of sentiment impact from news and social media trends on stock prices.
-- Stretch goal – predicting % price change <br>
+- Stretch goal – predicting % price change <br><br>
 Methodology:
 Sentiment Analysis, Logistic Regression, and other required methods as needed.
 
