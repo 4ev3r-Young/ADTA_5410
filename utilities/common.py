@@ -169,3 +169,74 @@ def save_groups(df, column, file_path):
         group_df.to_csv(full_path, index=False)
 
     print(f"Files saved to: {file_path}")
+
+
+#-------------------------------------------------------------------------------------------------------------------------------------------------------------
+def check_table(table_name, conn):
+    """
+    Checks if a table exists in PostgreSQL. If not, creates the table with schema.
+    """
+    table_query = f"""
+    CREATE TABLE IF NOT EXISTS {table_name} (
+        date DATE,
+        Open FLOAT,
+        High FLOAT,
+        Low FLOAT,
+        Close FLOAT,
+        Adj_Close FLOAT,
+        Volume BIGINT,
+        sentiment_score FLOAT,
+        sentiment_count INT
+    );
+    """
+    try:
+        with conn.cursor() as cur:
+            cur.execute(table_query)
+            conn.commit()
+            print(f"Table '{table_name}' is ready.")
+    except Exception as e:
+        conn.rollback()
+        print(f"Error ensuring table exists: {e}")
+    finally:
+        cur.close()
+
+
+#-------------------------------------------------------------------------------------------------------------------------------------------------------------
+def df_to_postgres(df, table_name, conn, batch_size=1000):
+    """
+    Inserts a Pandas DataFrame into a PostgreSQL table.
+
+    Parameters:
+        df (pd.DataFrame): DataFrame containing the data to be inserted.
+        table_name (str): The name of the PostgreSQL table.
+        conn (psycopg2.connection): Active PostgreSQL connection object.
+        batch_size (int): Number of rows to insert per batch.
+    """
+    # make sure the table is there
+    check_table(table_name, conn)
+
+    # Generate the column names
+    columns = ', '.join(df.columns)
+
+    # Generate the placeholder
+    placeholders = ', '.join(['%s'] * len(df.columns))
+
+    # Build the SQL INSERT statement
+    insert_query = f"INSERT INTO {table_name} ({columns}) VALUES ({placeholders})"
+
+    # Convert the DataFrame
+    data_tuples = [tuple(row) for row in df.to_numpy()]
+
+    try:
+        with conn.cursor() as cur:
+            for i in range(0, len(data_tuples), batch_size):
+                batch = data_tuples[i:i + batch_size]
+                cur.executemany(insert_query, batch)
+                conn.commit()
+                print(f"Inserted batch {i // batch_size + 1} successfully")
+    except Exception as e:
+        conn.rollback()
+        print(f"Error: {e}")
+    finally:
+        cur.close()
+

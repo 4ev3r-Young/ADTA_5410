@@ -1,0 +1,49 @@
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jupyter-dep
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: jupyter
+  template:
+    metadata:
+      labels:
+        app: jupyter
+    spec:
+      containers:
+      - name: jupyter
+        image: jupyter/minimal-notebook:latest
+        command: ["start-notebook.sh"]
+        env:
+        - name: APP_ENV
+          valueFrom:
+            configMapKeyRef:
+              name: jupyter-config
+              key: APP_ENV
+        - name: NOTEBOOK_DIR
+          valueFrom:
+            configMapKeyRef:
+              name: jupyter-config
+              key: NOTEBOOK_DIR
+        - name: JUPYTER_TOKEN
+          valueFrom:
+            secretKeyRef:
+              name: jupyter-secret
+              key: JUPYTER_TOKEN
+        ports:
+        - containerPort: 8888
+        volumeMounts:
+        - name: notebook-storage
+          mountPath: /home/jovyan/work
+        - name: venv-storage
+          mountPath: /home/jovyan/.cache/pypoetry
+      volumes:
+      - name: notebook-storage
+        persistentVolumeClaim:
+          claimName: jupyter-pvc
+      - name: venv-storage
+        persistentVolumeClaim:
+          claimName: jupyter-pvc

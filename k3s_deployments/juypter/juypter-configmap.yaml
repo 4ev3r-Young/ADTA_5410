@@ -1,0 +1,9 @@
+
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: jupyter-config
+data:
+  APP_ENV: production
+  NOTEBOOK_DIR: /home/jovyan/work
+

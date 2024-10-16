@@ -89,3 +89,26 @@ def aggregate_column(df, agg_columns):
         return None
 
     return aggregated_df
+
+
+#-------------------------------------------------------------------------------------------------------------------------------------------------------------
+def format_column_names(df):
+    """
+    Format column names by trimming whitespace, converting to lowercase,
+    and replacing spaces with underscores.
+
+    Parameters:
+    - df: The DataFrame to process.
+
+    Returns:
+    - DataFrame with formatted column names, or None if an error occurs.
+    """
+    try:
+        df.columns = [
+            col.strip().lower().replace(' ', '_') for col in df.columns
+        ]
+    except Exception as e:
+        print(f"An unexpected error occurred while formatting column names: {e}")
+        return None
+
+    return df

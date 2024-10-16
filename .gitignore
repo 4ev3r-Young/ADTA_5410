@@ -4,6 +4,7 @@ data
 adta*
 utilities/scratch.py
 .DS_STORE
-
+k3s_deployments/juypter/juypter-secret.yaml
+k3s_deployments/postgres/postgres-secret.yaml
 # Ignore __pycache__ folders
 __pycache__/
