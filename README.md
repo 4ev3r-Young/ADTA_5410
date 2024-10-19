@@ -37,19 +37,19 @@ We would like to acknowledge the following projects whose work we have incorpora
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
 
-| Package | Contribution | Link |
-|---------|--------------|------|
-| [python](https://www.python.org/) | Programming language | [Link to Python](https://www.python.org/) |
-| [yfinance](https://github.com/ranaroussi/yfinance) | Financial data retrieval | [Link to GitHub](https://github.com/ranaroussi/yfinance) |
-| [transformers](https://github.com/huggingface/transformers) | NLP and deep learning models | [Link to GitHub](https://github.com/huggingface/transformers) |
-| [scikit-learn](https://github.com/scikit-learn/scikit-learn) | Machine learning library | [Link to GitHub](https://github.com/scikit-learn/scikit-learn) |
-| [python-dotenv](https://github.com/theskumar/python-dotenv) | Environment variable management | [Link to GitHub](https://github.com/theskumar/python-dotenv) |
-| [pandas](https://github.com/pandas-dev/pandas) | Data manipulation library | [Link to GitHub](https://github.com/pandas-dev/pandas) |
-| [ipywidgets](https://github.com/jupyter-widgets/ipywidgets) | Interactive widgets for Jupyter | [Link to GitHub](https://github.com/jupyter-widgets/ipywidgets) |
-| [requests](https://github.com/psf/requests) | HTTP requests library | [Link to GitHub](https://github.com/psf/requests) |
-| [tf-keras](https://github.com/tensorflow/tensorflow) | Neural networks with TensorFlow | [Link to GitHub](https://github.com/tensorflow/tensorflow) |
-| [psycopg2-binary](https://github.com/psycopg/psycopg2) | PostgreSQL database adapter | [Link to GitHub](https://github.com/psycopg/psycopg2) |
-| [newscatcherapi](https://github.com/NewscatcherAPI/newscatcherapi-sdk-python) | News scraping API | [Link to GitHub](https://github.com/NewscatcherAPI/newscatcherapi-sdk-python) |
+| Package | Contribution | Website |
+|---------|--------------|---------|
+| [python](https://www.python.org/) | Programming language | [python.org](https://www.python.org/) |
+| [yfinance](https://github.com/ranaroussi/yfinance) | Financial data retrieval | [yfinance documentation](https://pypi.org/project/yfinance/) |
+| [transformers](https://github.com/huggingface/transformers) | NLP and deep learning models | [huggingface.co](https://huggingface.co/transformers/) |
+| [scikit-learn](https://github.com/scikit-learn/scikit-learn) | Machine learning library | [scikit-learn.org](https://scikit-learn.org/) |
+| [python-dotenv](https://github.com/theskumar/python-dotenv) | Environment variable management | [pypi.org](https://pypi.org/project/python-dotenv/) |
+| [pandas](https://github.com/pandas-dev/pandas) | Data manipulation library | [pandas.pydata.org](https://pandas.pydata.org/) |
+| [ipywidgets](https://github.com/jupyter-widgets/ipywidgets) | Interactive widgets for Jupyter | [ipywidgets.readthedocs.io](https://ipywidgets.readthedocs.io/) |
+| [requests](https://github.com/psf/requests) | HTTP requests library | [docs.python-requests.org](https://docs.python-requests.org/) |
+| [tf-keras](https://github.com/tensorflow/tensorflow) | Neural networks with TensorFlow | [tensorflow.org](https://www.tensorflow.org/guide/keras) |
+| [psycopg2-binary](https://github.com/psycopg/psycopg2) | PostgreSQL database adapter | [psycopg.org](https://www.psycopg.org/) |
+| [newscatcherapi](https://github.com/NewscatcherAPI/newscatcherapi-sdk-python) | News scraping API | [newscatcherapi.com](https://newscatcherapi.com/) |
 
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
