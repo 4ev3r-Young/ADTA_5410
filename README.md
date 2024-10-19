@@ -24,6 +24,21 @@ Sentiment Analysis, Logistic Regression, and other required methods as needed. T
 
 Pre-built models are used to filter financial news and then analyze the article to get a weighted sentiment score. News, historical stock prices and other engineered features will be used to train a custom RNN model to predict stock price direction and % price change. <br>
 
-The information for getting started and fine tuning pre-trained models can be found on [Hugging Face](https://huggingface.co/docs/transformers/en/training)<br>
+## Special Thanks
 
 Special Thanks to [Ed and the Team @newscatcherapi](https://www.newscatcherapi.com/) for the student support. You can also find their GitHub [Here.](https://github.com/NewscatcherAPI)
+
+
+## Acknowledgments ✨
+
+We would like to acknowledge the following projects whose work we have incorporated into this project:
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<!-- Major projects listed here by the bot -->
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+

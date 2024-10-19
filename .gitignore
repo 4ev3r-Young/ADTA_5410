@@ -1,9 +1,18 @@
+# ----------------------------------------------------------------
+# secrets
+k3s_deployments/juypter/juypter-secret.yaml
+k3s_deployments/postgres/postgres-secret.yaml
+
+# ----------------------------------------------------------------
+# Permanently ignored common files
 .venv
-data
 .env
-adta*
+adta*/
 utilities/scratch.py
 .DS_STORE
-
-# Ignore __pycache__ folders
 __pycache__/
+
+# ----------------------------------------------------------------
+# Temp files
+k3s_deployments/
+data/
