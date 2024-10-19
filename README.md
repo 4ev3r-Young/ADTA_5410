@@ -29,7 +29,9 @@ Pre-built models are used to filter financial news and then analyze the article 
 Special Thanks to [Ed and the Team @newscatcherapi](https://www.newscatcherapi.com/) for the student support. You can also find their GitHub [Here.](https://github.com/NewscatcherAPI)
 
 
-## Acknowledgments ✨
+# Acknowledgments ✨
+
+## Contributors
 
 We would like to acknowledge the following projects whose work we have incorporated into this project:
 
@@ -37,9 +39,13 @@ We would like to acknowledge the following projects whose work we have incorpora
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
 
-<!-- markdownlint-restore -->
-<!-- prettier-ignore-end -->
+| Contributor | Contribution | Link |
+|-------------|--------------|------|
+| [scikit-learn](https://github.com/scikit-learn/scikit-learn) | 🏗️ Project | [GitHub](https://github.com/scikit-learn/scikit-learn) |
+| [newscatcherapi-sdk-python](https://github.com/NewscatcherAPI/newscatcherapi-sdk-python) | 🏗️ Project | [GitHub](https://github.com/NewscatcherAPI/newscatcherapi-sdk-python) |
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
+
+
 
 
