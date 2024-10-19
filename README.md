@@ -31,18 +31,26 @@ Special Thanks to [Ed and the Team @newscatcherapi](https://www.newscatcherapi.c
 
 # Acknowledgments ✨
 
-## Contributors
-
 We would like to acknowledge the following projects whose work we have incorporated into this project:
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
 
-| Contributor | Contribution | Link |
-|-------------|--------------|------|
-| [scikit-learn](https://github.com/scikit-learn/scikit-learn) | 🏗️ Project | [GitHub](https://github.com/scikit-learn/scikit-learn) |
-| [newscatcherapi-sdk-python](https://github.com/NewscatcherAPI/newscatcherapi-sdk-python) | 🏗️ Project | [GitHub](https://github.com/NewscatcherAPI/newscatcherapi-sdk-python) |
+| Package | Contribution | Link |
+|---------|--------------|------|
+| [python](https://www.python.org/) | Programming language | [Link to Python](https://www.python.org/) |
+| [yfinance](https://github.com/ranaroussi/yfinance) | Financial data retrieval | [Link to GitHub](https://github.com/ranaroussi/yfinance) |
+| [transformers](https://github.com/huggingface/transformers) | NLP and deep learning models | [Link to GitHub](https://github.com/huggingface/transformers) |
+| [scikit-learn](https://github.com/scikit-learn/scikit-learn) | Machine learning library | [Link to GitHub](https://github.com/scikit-learn/scikit-learn) |
+| [python-dotenv](https://github.com/theskumar/python-dotenv) | Environment variable management | [Link to GitHub](https://github.com/theskumar/python-dotenv) |
+| [pandas](https://github.com/pandas-dev/pandas) | Data manipulation library | [Link to GitHub](https://github.com/pandas-dev/pandas) |
+| [ipywidgets](https://github.com/jupyter-widgets/ipywidgets) | Interactive widgets for Jupyter | [Link to GitHub](https://github.com/jupyter-widgets/ipywidgets) |
+| [requests](https://github.com/psf/requests) | HTTP requests library | [Link to GitHub](https://github.com/psf/requests) |
+| [tf-keras](https://github.com/tensorflow/tensorflow) | Neural networks with TensorFlow | [Link to GitHub](https://github.com/tensorflow/tensorflow) |
+| [psycopg2-binary](https://github.com/psycopg/psycopg2) | PostgreSQL database adapter | [Link to GitHub](https://github.com/psycopg/psycopg2) |
+| [newscatcherapi](https://github.com/NewscatcherAPI/newscatcherapi-sdk-python) | News scraping API | [Link to GitHub](https://github.com/NewscatcherAPI/newscatcherapi-sdk-python) |
+
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
